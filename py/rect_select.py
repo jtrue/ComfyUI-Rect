@@ -24,10 +24,10 @@ class RectSelect:
         return {
             "required": {
                 "image": ("IMAGE",),
-                "x": ("INT", {"default": 0, "min": 0}),
-                "y": ("INT", {"default": 0, "min": 0}),
-                "w": ("INT", {"default": 256, "min": 1}),
-                "h": ("INT", {"default": 256, "min": 1}),
+                "x": ("INT", {"default": 0, "min": 0, "max": 65535}),
+                "y": ("INT", {"default": 0, "min": 0, "max": 65535}),
+                "w": ("INT", {"default": 256, "min": 1, "max": 65535}),
+                "h": ("INT", {"default": 256, "min": 1, "max": 65535}),
             }
         }
 
@@ -45,3 +45,4 @@ class RectSelect:
 
 NODE_CLASS_MAPPINGS = {"RectSelect": RectSelect}
 NODE_DISPLAY_NAME_MAPPINGS = {"RectSelect": "Rect / Select"}
+
