@@ -12,7 +12,9 @@ Outputs a reusable **RECT** object (`{x,y,w,h}`) **and** the four scalar values 
 
 ## Example Workflow
 ![Example workflow](assets/RectSelectNodes.png)
-![Example workflow](assets/RectExample.json)
+
+**Load this workflow:** 
+[assets/demo-workflow.json](assets/RectExample.json)
 
 
 ## Features
