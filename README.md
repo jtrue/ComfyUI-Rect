@@ -7,6 +7,14 @@ Outputs a reusable **RECT** object (`{x,y,w,h}`) **and** the four scalar values 
 
 ---
 
+## Screenshots
+![Rect / Select overlay](assets/RectSelectMarchingAnts.png)
+
+## Example Workflow
+![Example workflow](assets/RectSelectNodes.png)
+![Example workflow](assets/RectExample.json)
+
+
 ## Features
 - 🖱️ Interactive selector: draw/refine a box over your input image
 - 🧱 Clean **RECT** type + `x/y/w/h` ints
