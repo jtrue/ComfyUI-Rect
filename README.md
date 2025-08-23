@@ -32,7 +32,6 @@ Outputs a reusable **RECT** object (`{x,y,w,h}`) **and** the four scalar values 
    ComfyUI/custom_nodes/
    ```
 2. Restart ComfyUI.
-3. Open the UI with **`?nocache=1`** (e.g. `http://127.0.0.1:8188/?nocache=1`) to refresh front-end JS.
 
 > If the **“Open Rect / Select”** button doesn’t appear, it’s almost always cache—use `?nocache=1`.
 
