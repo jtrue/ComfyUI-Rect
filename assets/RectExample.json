@@ -1,0 +1,492 @@
+{
+  "id": "eb38b0e1-4d42-4b38-b514-74d55132939c",
+  "revision": 0,
+  "last_node_id": 28,
+  "last_link_id": 63,
+  "nodes": [
+    {
+      "id": 14,
+      "type": "PreviewImage",
+      "pos": [
+        1088,
+        627
+      ],
+      "size": [
+        528,
+        310
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 24,
+      "type": "RectFill",
+      "pos": [
+        748,
+        647
+      ],
+      "size": [
+        270,
+        222
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 62
+        },
+        {
+          "name": "rect",
+          "type": "RECT",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            54
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RectFill",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "r": true,
+            "g": true,
+            "b": true,
+            "opacity": true,
+            "mode": true,
+            "thickness": true,
+            "feather": true
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        255,
+        0,
+        0,
+        1,
+        "fill",
+        4,
+        23
+      ]
+    },
+    {
+      "id": 22,
+      "type": "RectCrop",
+      "pos": [
+        689,
+        476
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 61
+        },
+        {
+          "name": "rect",
+          "type": "RECT",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            52
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RectCrop",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 23,
+      "type": "PreviewImage",
+      "pos": [
+        985,
+        326
+      ],
+      "size": [
+        507,
+        246
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 52
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 26,
+      "type": "RectMask",
+      "pos": [
+        749,
+        951
+      ],
+      "size": [
+        270,
+        146
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 63
+        },
+        {
+          "name": "rect",
+          "type": "RECT",
+          "link": 57
+        },
+        {
+          "name": "existing_mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [
+            59
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RectMask",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "feather": true,
+            "invert": true,
+            "combine": true
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        0,
+        false,
+        "replace"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "MaskPreview+",
+      "pos": [
+        1101,
+        993
+      ],
+      "size": [
+        502.858154296875,
+        258
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 59
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfyui_essentials",
+        "ver": "9d9f4bedfc9f0321c19faf71855e228c93bd0dc9",
+        "Node name for S&R": "MaskPreview+",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "RectSelect",
+      "pos": [
+        382,
+        664
+      ],
+      "size": [
+        270,
+        234
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 60
+        }
+      ],
+      "outputs": [
+        {
+          "name": "rect",
+          "type": "RECT",
+          "links": [
+            50,
+            53,
+            57
+          ]
+        },
+        {
+          "name": "x",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "y",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "w",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "h",
+          "type": "INT",
+          "links": []
+        }
+      ],
+      "properties": {
+        "x": 763,
+        "y": 309,
+        "w": 1378,
+        "h": 749,
+        "Node name for S&R": "RectSelect",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "x": true,
+            "y": true,
+            "w": true,
+            "h": true
+          },
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        763,
+        309,
+        1378,
+        749,
+        "open"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "LoadImage",
+      "pos": [
+        -106.9020004272461,
+        572.7359619140625
+      ],
+      "size": [
+        274.080078125,
+        314.0000305175781
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            60,
+            61,
+            62,
+            63
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.0.1"
+        }
+      },
+      "widgets_values": [
+        "pasted/image (6).png",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      50,
+      21,
+      0,
+      22,
+      1,
+      "RECT"
+    ],
+    [
+      52,
+      22,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ],
+    [
+      53,
+      21,
+      0,
+      24,
+      1,
+      "RECT"
+    ],
+    [
+      54,
+      24,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      57,
+      21,
+      0,
+      26,
+      1,
+      "RECT"
+    ],
+    [
+      59,
+      26,
+      0,
+      27,
+      0,
+      "MASK"
+    ],
+    [
+      60,
+      28,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      61,
+      28,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      62,
+      28,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      63,
+      28,
+      0,
+      26,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "ds": {
+      "scale": 0.8264462809917354,
+      "offset": [
+        328.66200000000003,
+        -217.21599999999998
+      ]
+    },
+    "links_added_by_ue": [],
+    "frontendVersion": "1.24.4",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
